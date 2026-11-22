@@ -1,0 +1,75 @@
+QMainWindow {
+    background-color: #ffe4ec;
+}
+
+QWidget {
+    font-family: Arial;
+    font-size: 15px;
+    color: #6b2c43;
+}
+
+QLabel#title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d63384;
+}
+
+QLabel#hint {
+    font-size: 13px;
+    color: #b5617f;
+}
+
+QLabel#balance {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c2185b;
+    background-color: #fff0f5;
+    border: 2px solid #f8bbd0;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+QLineEdit {
+    background-color: #fff0f5;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #f06292;
+}
+
+QComboBox {
+    background-color: #fff0f5;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #fff0f5;
+    selection-background-color: #f8bbd0;
+    selection-color: #6b2c43;
+}
+
+QPushButton {
+    background-color: #f48fb1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #ec407a;
+}
+
+QPushButton:pressed {
+    background-color: #c2185b;
+}
+
+QMessageBox {
+    background-color: #ffe4ec;
+}
