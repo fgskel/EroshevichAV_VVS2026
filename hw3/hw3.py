@@ -12,7 +12,7 @@ def gen_maze(size):
              for i in range(size)] for i in range(size)]
     maze[0][0]["type"] = "старт"
     maze[size - 1][size - 1]["type"] = "выход"
-    # ключ гарантированно кладём в случайную комнату
+    # ключ гарантированно есть в случайной комнате
     free = [(i, j) for i in range(size) for j in range(size)
             if (i, j) not in [(0, 0), (size - 1, size - 1)]]
     kx, ky = random.choice(free)
@@ -62,7 +62,7 @@ def fight(state):
             state["hp"] -= hit
             print(f"Монстр бьёт на {hit}")
     if state["hp"] > 0:
-        print("Монстр побеждён! Выпало: золото")
+        print("Вы победили монстра! Выпало: золото")
         state["inv"].append("золото")
 
 
